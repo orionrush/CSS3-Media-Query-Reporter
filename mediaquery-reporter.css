@@ -3,11 +3,13 @@
 	CSS3 Media Query Reporter
 	   v. 1.0.1
 	   by David Cochran - aLittleCode.com
-
+	   
+	   Source:		
 	   https://github.com/davidcochran/CSS3-Media-Query-Reporter
 	   
-	   Modified to include default Twitter Bootstrap breakpoints by orionrush
+	   Modified to include default Twitter Bootstrap breakpoints
 	   TBS breakpoints indicated by asterix '*'
+	   https://github.com/orionrush/CSS3-Media-Query-Reporter
 ========================================= */
 
 body:after {
