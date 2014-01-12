@@ -3,25 +3,23 @@
 	CSS3 Media Query Reporter
 	   v. 1.0.1
 	   by David Cochran - aLittleCode.com
-	   
-	   Source:		
+
 	   https://github.com/davidcochran/CSS3-Media-Query-Reporter
-	   
-	   Modified to include default Twitter Bootstrap breakpoints
-	   TBS breakpoints indicated by asterix '*'
-	   https://github.com/orionrush/CSS3-Media-Query-Reporter
+
+	   Modified to include default Twitter Bootstrap breakpoints by orionrush
+	   TBS breakpoints indicated by an asterix '*'
 ========================================= */
 
 body:after {
-	content: "less than 320px";
+	content: attr(data-content) "px (less than 320px)";
 	font-size: 200%;
 	line-height: 1;
 	font-weight: bold;
 	position: fixed;
 	bottom: 40px;
-	/* margin-left and width adjusted to compensate for TBS 20px margins */
-	margin-left: -20px;
-	width: 110%;
+	/* margin-left and width adjusted to compensate for *most* body margins applied in  styles */
+	/*margin-left:-15%;*/
+	width: 100%;
 	padding: 5px 0;
 	text-align: center;
 	background-color: hsla(1,60%,40%,0.7);
@@ -31,75 +29,75 @@ body:after {
 
 @media only screen and (min-width: 320px) {
 	body:after {
-		content: "320 to 480px";
+		content: attr(data-content) "px (320 to 479px)";
 		background-color: hsla(90,60%,40%,0.7);
 	}
 }
 @media only screen and (min-width: 480px) {
 	body:after {
-		content: "480 to 640px";
+		content: attr(data-content) "px (480 to 639px)";
 		background-color: hsla(180,60%,40%,0.7);
 	}
 }
 @media only screen and (min-width: 640px) {
 	body:after {
-		content: "640 to *767px";
+		content: attr(data-content) "px (640 to 767px)";
 		background-color: hsla(270,60%,40%,0.7);
 	}
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 768px) {
 	body:after {
-		content: "*767 to 800px";
+		content:  attr(data-content) "px (*768 to 799px)";
 		background-color: hsla(360,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 800px) {
 	body:after {
-		content: "800 to 960px";
+		content: attr(data-content) "px (800 to 959px)";
 		background-color: hsla(90,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 960px) {
 	body:after {
-		content: "960 to *979px";
+		content: attr(data-content) "px (960 to 978px)";
 		background-color: hsla(180,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 979px) {
 	body:after {
-		content: "*979 to 1120px";
+		content: attr(data-content) "px (*979 to 1119px)";
 		background-color: hsla(270,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 1120px) {
 	body:after {
-		content: "1120 to *1200px";
+		content: attr(data-content) "px (1120 to *1199px)";
 		background-color: hsla(360,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 1200px) {
 	body:after {
-		content: "*1200 to 1280px";
+		content: attr(data-content) "px (*1200 to 1279px)";
 		background-color: hsla(90,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	body:after {
-		content: "1280 to 1440px";
+		content: attr(data-content) "px (1280 to 1439px)";
 		background-color: hsla(180,60%,40%,0.7);
 	}
 }
 
 @media only screen and (min-width: 1440px) {
 	body:after {
-		content: "1440 and up";
+		content: attr(data-content) "px (1440 and up)";
 		background-color: hsla(270,60%,40%,0.7);
 	}
 }
