@@ -1,11 +1,10 @@
 
-# WP Dynamic CSS3 Media Reporter
+# WP CSS3 Dynamic Width Reporter
 
 A Wordpress plugin based on the work of [David Cochran](https://github.com/davidcochran/CSS3-Media-Query-Reporter). 
 
-The plugin displays a dynamic version of David's CSS3 Media Reporter, i.e. @media breakpoints are shown as a banner on the front end of your site, but only to admins that have logged in. Actual pixel widths of the browser window are dynamically updated via javascript.
+The plugin displays a dynamic version of David's CSS3 Media Reporter, i.e. @media breakpoints are shown as a banner on the front end of your site, but visable only to logged in admins. Pixel widths of the browser window are dynamically updated via javascript, imensely useful when testing and designing media rules for different screen widths. 
 
-This visual feedback is useful during the development of dynamic themes.
 
 Known issues:
 
@@ -24,7 +23,6 @@ Make a admin settings panel to allow the customisation of:
 - add a custom CSS where users may inject any custom css into the end of the stylesheet - for what ever reason they might want.
 
 ### Notes:
-
 - Increment a value between a range (think hsla numbers) for rule bg colour
 http://php.net/manual/en/function.range.php
 - Drag & drop options

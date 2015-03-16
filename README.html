@@ -1,0 +1,38 @@
+<h1>WP CSS3 Dynamic Width Reporter</h1>
+
+<p>A Wordpress plugin based on the work of <a href="https://github.com/davidcochran/CSS3-Media-Query-Reporter">David Cochran</a>.</p>
+
+<p>The plugin displays a dynamic version of David&rsquo;s CSS3 Media Reporter, i.e. @media breakpoints are shown as a banner on the front end of your site, but visable only to logged in admins. Pixel widths of the browser window are dynamically updated via javascript, imensely useful when testing and designing media rules for different screen widths.</p>
+
+<p>Known issues:</p>
+
+<ul>
+<li><p>Theme stylesheet rules that deal with the html and body elements and their width, margin and padding can cause the javascript which calculates the browser width to report a false pixel with.</p></li>
+<li><p>Break points are baked into the css. You will have to manually edit this to accommodate your particular needs. Making this editable via an admin settings page is on the roadmap.</p></li>
+</ul>
+
+
+<h3>Roadmap:</h3>
+
+<p>Make a admin settings panel to allow the customisation of:</p>
+
+<ul>
+<li>breakpoint rules and colours</li>
+<li>set display text</li>
+<li>suggest common media breakpoints i.e. bootstrap responsive</li>
+<li>Drag and drop the rule orders so that it makes sense to the user</li>
+<li>output the generated style sheet (something they can copy-paste)</li>
+<li>add a custom CSS where users may inject any custom css into the end of the stylesheet - for what ever reason they might want.</li>
+</ul>
+
+
+<h3>Notes:</h3>
+
+<ul>
+<li>Increment a value between a range (think hsla numbers) for rule bg colour
+http://php.net/manual/en/function.range.php</li>
+<li>Drag &amp; drop options
+http://pippinsplugins.com/drag-and-drop-order-for-plugin-options/</li>
+<li>Consider SQL menu order vs Plugin Options</li>
+</ul>
+
